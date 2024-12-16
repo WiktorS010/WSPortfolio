@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/laptop.png">
+    <title>Wiktor Stępień</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+    rel="stylesheet"
+    >
+</head>
+<body class="portfolio">
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">
+                Welcome to my portfolio
+                <img src="img/laptop.png" class="navbar__laptopicon">
+            </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links">About me</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#pro" class="navbar__links">Projects</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links" id="navbar__links--contact">
+                        Contact
+                        <img src="img/downward-arrow.png" alt="Downward arrow Icon" class="contact__arrow--icon">
+                    </a>
+                </li>
+            </ul>
+            <div id="contact__panel" class="contact__panel">
+                <div class="contact__content">
+                        <div class="navbar__contact--email">
+                            <img src="img/mail.png" alt="Mail Icon" id="copyEmailIcon" class="navbar__contact__email--icon" style="cursor: pointer;">
+                        </div>
+                        <div class="navbar__contact--github">
+                            <a href="https://github.com/WiktorS010" target="_blank">
+                                <img src="img/github.png" alt="Github Icon" class="navbar__contact__github--icon">
+                            </a>
+                        </div>
+                        <div class="navbar__contact--linkedin">
+                            <a href="https://linkedin.com/in/wiktor-stępień-8a36b0258" target="_blank">
+                                <img src="img/linkedin.png" alt="LinkedIn Icon" class="navbar__contact__linkedin--icon">
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- About me section -->
+     <div id="about" class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Hello, my name is Wiktor Stępień</h1>
+                <p>I am a graduate of the Warsaw University of Technology, where I majored in Mechanical Engineering and Machine Building. Currently, I am focused on learning Java programming and exploring its associated technologies and frameworks. I have also completed the "Java Developer" programming course at CodersLab.
+
+                    My interests include cryptocurrency, and my projects revolve around this topic. I am continuously learning and striving to improve my skills.
+                    
+                    In my free time, I enjoy climbing and cycling, which help me stay active and inspired.</p>
+            </div>
+            <div class="main__img--container">
+                <img src="img/codingGuy.webp" alt="codingGuy image" id="main__img">
+            </div>
+        </div>
+     </div>
+
+     <!-- Projects section -->
+     <div id="projects" class="projects">
+        <h1 id="pro">Projects</h1>
+        <div class="projects__container">
+            <div class="projects__card">
+                <h2>Crypto Exchange</h2>
+                <p>This Java project is designed to create an efficient 
+                    and real-time order book system by leveraging APIs from cryptocurrency exchanges. 
+                    Built with the Spring framework.</p>
+                <a href="https://github.com/WiktorS010/CryptoExchange" target="_blank">
+                    <button>Go to Github repository</button>
+                </a>
+            </div>
+            <div class="projects__card">
+                <h2>Investment App</h2>
+                <p>This project provides a platform for users to simulate cryptocurrency investments. 
+                    By utilizing the CoinMarketCap API, the application fetches real-time data such as 
+                    coin prices, market capitalization, and symbols to enable realistic simulations.
+                    It is a CRUD-based application, allowing users to create, read, update, and delete investment records.</p>
+                <a href="https://github.com/WiktorS010/InvestmentApp-backend" target="_blank">
+                    <button>Go to Github repository</button>
+                </a>
+            </div> 
+            <div class="projects__card">
+                <h2>Employee App</h2>
+                <p>LoginThymeleafSB is a Spring Boot application designed as a learning project. 
+                    It demonstrates how to manage data using Java and MySQL, export data to Excel files, 
+                    and create a basic CRUD web application with Spring Boot and Thymeleaf. 
+                    Additionally, the project includes basic user authentication using Spring Security.</p>
+                <a href="https://github.com/WiktorS010/Employee-App-excel" target="_blank">
+                    <button>Go to Github repository</button>
+                </a>
+            </div>   
+        </div>
+     </div> 
+     <!-- Contact section -->
+      <div class="contact">
+        <div class="contact__container">
+            <div class="contact__email">
+                    <img src="img/mail.png" alt="Mail Icon" id="copyEmailIcon" class="contact__email--icon" style="cursor: pointer;">
+            </div>
+            <div class="contact__github">
+                <a href="https://github.com/WiktorS010" target="_blank">
+                    <img src="img/github.png" alt="Github Icon" class="contact__github--icon">
+                </a>
+            </div>
+            <div class="contact__linkedin">
+                <a href="https://linkedin.com/in/wiktor-stępień-8a36b0258" target="_blank">
+                    <img src="img/linkedin.png" alt="LinkedIn Icon" class="contact__linkedin--icon">
+                </a>
+            </div>
+        </div>
+      </div>
+    <script src="app.js"></script>
+</body>
+</html>
