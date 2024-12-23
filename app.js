@@ -1,6 +1,7 @@
 const menu = document.querySelector('#mobile-menu')
 const menuLinks = document.querySelector('.navbar__menu')
 const emailLink = document.querySelector('#copyEmailIcon')
+const emailLinkBottom = document.querySelector('#copyEmailIconBottom')
 const email = 'stepienw96@gmail.com';
 const contactLink = document.querySelector('#navbar__links--contact');
 const contactPanel = document.querySelector('.contact__panel');
@@ -11,6 +12,17 @@ menu.addEventListener('click', function() {
 });
 
 emailLink.addEventListener('click', function () {
+
+    navigator.clipboard.writeText(email)
+    .then(() => {
+        alert('Email copied to clipboard');
+    })
+    .catch(err => {
+        console.error('Failed to copy emial: ', err)
+    });
+});
+
+emailLinkBottom.addEventListener('click', function () {
 
     navigator.clipboard.writeText(email)
     .then(() => {
