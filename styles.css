@@ -194,7 +194,7 @@ html {
     right: -100%;
     border-radius: 7px;
     width: 120px;
-    height: 50%;
+    height: 350px;
     background-color: #8fcb9beb;
     color: #131313;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
@@ -207,7 +207,7 @@ html {
 }
 
 .contact__panel.active {
-    right: 13%;
+    right: 150px;
     pointer-events: auto;
 }
 
@@ -294,7 +294,7 @@ html {
         justify-self: center;
         width: 100%;
         margin: 0 auto;
-        height: 90vh;
+        height: 90%;
     }
 
     .main__content {
@@ -391,7 +391,7 @@ html {
 }
 
 .projects__card:hover {
-    transform: scale(1.15);
+    transform: scale(1.12);
     transition: 0.2s ease-in;
     cursor: pointer;
 }
@@ -404,10 +404,20 @@ html {
     cursor: pointer;
 }
 
-
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1312px) {
     .projects {
-        height: 1600px;
+        height: 1400px;
+    }
+
+    .projects h1 {
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .projects {
+        height: 1950px;
     }
 
     .projects h1 {
@@ -418,7 +428,7 @@ html {
 
 @media screen and (max-width: 480px) {
     .projects {
-        height: 1400px;
+        height: 2000px;
     }
 
     .projects h1 {
@@ -426,7 +436,7 @@ html {
     }
 
     .projects__card {
-        width: 300px;
+        width: 100px;
     }
 }
 /* Contact section CSS */
@@ -482,4 +492,38 @@ html {
     height: auto;
     margin-left: 15px;
     vertical-align: middle;
+}
+@media screen and (max-width: 880px) {
+    .contact__container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .contact__email{
+        margin: 0 20px;
+        flex: 0 1 auto;
+        text-align: center;
+    }
+    .contact__github{
+        margin: 0 20px;
+        flex: 0 1 auto;
+        text-align: center;
+    }
+    .contact__linkedin{
+        margin: 0 20px;
+        flex: 0 1 auto;
+        text-align: center;
+    }
+    .contact__email--icon {
+       width: 100px;
+       margin-left: 10px;
+    }
+    .contact__github--icon {
+        width: 100px;
+       margin-left: 10px;
+    }
+    .contact__linkedin--icon {
+        width: 100px;
+       margin-left: 10px;
+    }
 }
